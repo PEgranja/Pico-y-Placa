@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Pico y Placa</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css"> 
+    <link rel="stylesheet" type="text/css" href="http://code.jquery.com/qunit/qunit-1.11.0.css">
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="tituloCSS">
+                <p id="titulo">APP PICO Y PLACA</p>
+            </div>
+            <div class="datosCSS">
+                <p id="placatxt">Número de Placa</p>
+                <input type="text" id="placa" maxlength="7" style='text-transform:uppercase;' style="width:120px">
+            </div>
+            <div class="datosCSS">
+                <p id="diatxt">Día de la Semana</p>
+                <select id="dia" size="1" style="width:120px">
+                  <option>LUNES</option>
+                  <option>MARTES</option>
+                  <option>MIERCOLES</option>
+                  <option>JUEVES</option>
+                  <option>VIERNES</option>
+                </select>
+            </div>
+            <div class="datosCSS">
+                <p id="horatxt">Hora</p>
+                <select id="hora" size="1" style="width:120px">
+                  <option>1H00 - 7H00</option>
+                  <option>7H00 - 9H30</option>
+                  <option>9H30 - 16H00</option>
+                  <option>16H00 - 19H30</option>
+                  <option>19H30 - 1H00</option>
+                </select>
+            </div>
+            <div class="botonConsultarCSS">
+                <button id="consultarBtn" onclick="Consultar()">CONSULTAR</button>
+            </div>
+            <div class="respuestaCSS">
+                <p id="respuesta">Presiona CONSULTAR para saber si tu vehiculo puede estar circulando</p>
+            </div>
+        </div>
+        <div id="qunit"></div>
+        <div id="qunit-fixture"></div>
+        <script type="text/javascript" src="http://code.jquery.com/qunit/qunit-1.11.0.js"></script>
+        <script type="text/javascript" src="js/picoyplaca.js"></script>
+    </body>
+</html> 
